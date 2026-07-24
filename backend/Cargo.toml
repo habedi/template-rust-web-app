@@ -1,0 +1,47 @@
+[package]
+name = "backend"
+description = "Backend service for the web application"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[features]
+default = []
+# Integration tests need the PostgreSQL container from `make docker-up`, so they
+# are opt-in and stay out of a plain `cargo test` run.
+integration-tests = []
+
+[dependencies]
+anyhow = "1.0.104"
+async-trait = "0.1.92"
+axum = { version = "0.8.9", features = ["macros"] }
+chrono = { version = "0.4.45", features = ["serde"] }
+dotenvy = "0.15.7"
+envy = "0.4.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+sqlx = { version = "0.9.0", features = [
+    "postgres",
+    "migrate",
+    "uuid",
+    "chrono",
+    "runtime-tokio",
+    "tls-rustls-ring",
+] }
+thiserror = "2.0.20"
+tokio = { version = "1.53.1", features = ["macros", "rt-multi-thread", "signal"] }
+tower-http = { version = "0.7.0", features = ["cors", "trace"] }
+tracing = "0.1.44"
+tracing-appender = "0.2.5"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter", "json"] }
+uuid = { version = "1.24.0", features = ["v4", "serde"] }
+validator = { version = "0.21.0", features = ["derive"] }
+
+[dev-dependencies]
+mockall = "0.15.0"
+
+[lints]
+workspace = true

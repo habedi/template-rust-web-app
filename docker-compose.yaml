@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      PORT: 8080
+      LOG_LEVEL: info
+      LOG_PRETTY: "false"
+      CORS_ORIGINS: "*"
+      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres?sslmode=disable
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./web
+      args:
+        VITE_API_URL: http://localhost:8080/api/v1
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  db:
+    driver: local
