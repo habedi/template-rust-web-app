@@ -6,11 +6,11 @@
   </picture>
 <br>
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/tests.yml?label=tests&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-rust-web-app/actions/workflows/tests.yml)
-[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/lints.yml?label=lints&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-rust-web-app/actions/workflows/lints.yml)
-[![Docker Images](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/docker.yml?label=images&style=flat&labelColor=282c34&color=4caf50&logo=docker)](https://github.com/habedi/template-rust-web-app/actions/workflows/docker.yml)
-[![Docs](https://img.shields.io/badge/docs-latest-007ec6?style=flat&labelColor=282c34&logo=readthedocs)](docs)
-[![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-007ec6?style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-rust-web-app)
+[![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/tests.yml?label=tests&style=flat&labelColor=282c34&&logo=github)](https://github.com/habedi/template-rust-web-app/actions/workflows/tests.yml)
+[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/lints.yml?label=lints&style=flat&labelColor=282c34&&logo=github)](https://github.com/habedi/template-rust-web-app/actions/workflows/lints.yml)
+[![Docker Images](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/docker.yml?label=images&style=flat&labelColor=282c34&&logo=docker)](https://github.com/habedi/template-rust-web-app/actions/workflows/docker.yml)
+[![Docs](https://img.shields.io/badge/docs-latest-3776ab?style=flat&labelColor=282c34&logo=readthedocs)](docs)
+[![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-3776ab?style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-rust-web-app)
 
 </div>
 
@@ -22,8 +22,8 @@ I share it here in case it might be useful to others.
 
 ### Features
 
-- Minimalistic project structure with a clear separation between the domain, application, and infrastructure layers
-- A backend built with Axum, sqlx, and PostgreSQL, including graceful shutdown, structured logging, and CORS
+- Minimalistic project structure with a separation between the domain, application, and infrastructure layers
+- A backend built with Axum, sqlx, and PostgreSQL, including graceful shutdown, structured logging, etc.
 - A SvelteKit frontend built with Svelte 5, Tailwind CSS, and TypeScript
 - Unit tests that mock the service traits, plus opt-in integration tests that run against a real database
 - Docker Compose setup for PostgreSQL, the backend, and the frontend
