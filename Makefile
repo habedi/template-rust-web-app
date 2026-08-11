@@ -3,7 +3,7 @@
 SHELL := /bin/bash
 BACKEND_DIR := backend
 WEB_DIR := web
-COMPOSE := docker compose
+COMPOSE := $(shell docker compose version >/dev/null 2>&1 && echo "docker compose" || echo "docker-compose")
 RUST_BACKTRACE := 1
 
 # Integration tests and manual migrations need this to match the `db` service in
