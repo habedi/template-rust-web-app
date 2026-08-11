@@ -14,7 +14,6 @@
       systems = [
         "x86_64-linux"
         "aarch64-linux"
-        "x86_64-darwin"
         "aarch64-darwin"
       ];
       forAllSystems = f:
@@ -51,6 +50,9 @@
 
               # Provides psql for inspecting the database container
               pkgs.postgresql_18
+
+              # Drives docker-compose.yaml; the Makefile falls back to this
+              pkgs.docker-compose
 
               # Shared tooling
               pkgs.gnumake
