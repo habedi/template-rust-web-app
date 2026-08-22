@@ -4,8 +4,9 @@ This file provides guidance to coding agents collaborating on this repository.
 
 ## Mission
 
-This repository is a minimalistic project template for developing generic web applications in Rust: a Rust backend
-(`backend/`) and a SvelteKit frontend (`web/`). Priorities, in order:
+This repository is a minimalistic project template for developing generic web applications in Rust, with
+a Rust backend (`backend/`) and a SvelteKit frontend (`web/`).
+Priorities, in order:
 
 1. Correctness of the example code, since users copy it as a starting point.
 2. Clean Architecture layering (domain, application, and infrastructure).
@@ -30,6 +31,7 @@ Quick examples:
 
 ## Writing Style
 
+- Write in simple, plain English. Use short sentences and everyday words.
 - Use Oxford commas in inline lists: "a, b, and c" not "a, b, c".
 - Do not use em dashes. Restructure the sentence, or use a colon or semicolon instead.
 - Avoid colorful adjectives and adverbs. Write "adjacency query" not "blazing adjacency query".
