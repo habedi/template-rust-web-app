@@ -8,8 +8,8 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.6.1",
-    "ruff>=0.16.2",
+    "pre-commit>=4.7.0",
+    "ruff>=0.17.3",
 ]
 
 [tool.uv]
