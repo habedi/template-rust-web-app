@@ -8,7 +8,7 @@
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/tests.yml?label=tests&style=flat&labelColor=282c34&&logo=github)](https://github.com/habedi/template-rust-web-app/actions/workflows/tests.yml)
 [![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/lints.yml?label=lints&style=flat&labelColor=282c34&&logo=github)](https://github.com/habedi/template-rust-web-app/actions/workflows/lints.yml)
-[![Docker Images](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/docker.yml?label=images&style=flat&labelColor=282c34&&logo=docker)](https://github.com/habedi/template-rust-web-app/actions/workflows/docker.yml)
+[![Docker Images](https://img.shields.io/github/actions/workflow/status/habedi/template-rust-web-app/docker.yml?label=ghcr.io&style=flat&labelColor=282c34&&logo=docker)](https://github.com/habedi/template-rust-web-app/actions/workflows/docker.yml)
 [![Docs](https://img.shields.io/badge/docs-latest-3776ab?style=flat&labelColor=282c34&logo=readthedocs)](docs)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-3776ab?style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-rust-web-app)
 

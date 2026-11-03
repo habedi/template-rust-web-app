@@ -10,17 +10,17 @@ indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{rs,js,py}]
+[*.{rs,py}]
 max_line_length = 100
 
-[*.{md,html,css}]
+[*.md]
 max_line_length = 150
 trim_trailing_whitespace = false
 
 [*.sh]
 indent_size = 2
 
-[*.{yaml,yml,json}]
+[*.{yaml,yml}]
 indent_size = 2
 
 # The frontend is formatted by Prettier, which is configured to use tabs.
