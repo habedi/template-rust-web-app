@@ -10,8 +10,6 @@ authors.workspace = true
 
 [features]
 default = []
-# Integration tests need the PostgreSQL container from `make docker-up`, so they
-# are opt-in and stay out of a plain `cargo test` run.
 integration-tests = []
 
 [dependencies]
