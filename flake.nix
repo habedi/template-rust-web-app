@@ -40,29 +40,15 @@
 
             packages = [
               rustToolchain
-
-              # Backend tooling the Makefile calls
               pkgs.sqlx-cli
               pkgs.cargo-audit
-
-              # Frontend tooling; the major version matches the one used in CI
               pkgs.nodejs_24
-
-              # Provides psql for inspecting the database container
               pkgs.postgresql_18
-
-              # Drives docker-compose.yaml; the Makefile falls back to this
               pkgs.docker-compose
-
-              # Shared tooling
               pkgs.gnumake
               pkgs.pre-commit
-
-              # For the optional Python tooling environment in pyproject.toml
               pkgs.python3
               pkgs.uv
-
-              # Native build inputs that crates commonly need
               pkgs.pkg-config
               pkgs.openssl
             ];
